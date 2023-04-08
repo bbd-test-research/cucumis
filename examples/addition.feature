@@ -37,3 +37,16 @@ Feature: Addition
 			| num1 	| num2 	| result 	|
 			| 1		| 2		| 3			|
 			| 2		| 3		| 5			|
+		# inputs negativos
+	        | -5    | -5    | -10       |
+			| -5    | 10    | 5         |
+		# resultado negativo
+		    |  5    | -10   | -5        |
+		# numeros reais
+	        | 0.3   | 0.3   |   0.6     |
+		# numeros nulos
+	        | 0     |  0    |    0      |
+		    | -5    |  5    |    0      |
+		# input nao numerico (erro)
+	        | a     |  b    |   error   |
+
